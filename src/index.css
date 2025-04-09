@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-width: 1700px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #dcc7aa;
+}
+
+header {
+  background-color: #556b2f;
+  width: 99%;
+  min-width: 1650px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  border-radius: 10px;
+}
+
+header > h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > nav {
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > nav > button,
+#home-container > section > button {
+  all: unset;
+  text-transform: uppercase;
+  background-color: #c1440e;
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+
+header > nav > button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: hsl(18, 86%, 31%);
+}
+
+header > nav > button:active {
+  transition: all 0.1s ease-in-out;
+  background-color: hsl(18, 86%, 46%);
+}
+
+#content {
+  flex: 1;
+  width: 99%;
+  min-width: 1650px;
+  margin-top: 120px;
+}
+
+#home-container,
+#about-container {
+  margin-top: 20px;
+}
+
+#menu-container {
+  margin: 20px;
+}
+
+#home-container {
+  display: flex;
+  height: 750px;
+}
+
+#home-container > * {
+  flex: 1;
+}
+
+#home-container > img,
+#about-content > img {
+  border-radius: 10px;
+}
+
+#home-container > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#home-container > section > p {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+#home-container > section > button {
+  background-color: #7b2d26;
+  color: #fdf5e6;
+}
+
+#home-container > section > button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: hsl(5, 53%, 22%);
+}
+
+#home-container > section > button:active {
+  transition: all 0.1s ease-in-out;
+  background-color: hsl(5, 53%, 37%);
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  margin-bottom: 50px;
+}
+
+#menu-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 650px;
+  justify-items: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+#menu-content > table {
+  width: 90%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+#menu-content > table > th {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  height: 10%;
+  border-bottom: 2px solid #c1440e;
+}
+
+#menu-content > figure > img {
+  border-radius: 20px;
+}
+
+#menu-content > figure > figcaption {
+  font-size: 1.5rem;
+}
+
+#about-content {
+  display: flex;
+}
+
+#about-content > * {
+  flex: 1;
+}
+
+#about-content > section {
+  margin: 20px;
+}
+
+#about-content > section > p {
+  font-size: 2rem;
+  text-align: justify;
+  margin: 30px 0;
+  text-indent: 50px;
+}
+
+#about-content > section > p:first-child,
+#home-container > section > p {
+  text-align: center;
+  font-style: italic;
+  text-indent: 0;
+}
